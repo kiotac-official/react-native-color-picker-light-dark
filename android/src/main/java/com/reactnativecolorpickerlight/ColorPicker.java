@@ -210,9 +210,9 @@ public class ColorPicker extends RelativeLayout implements View.OnTouchListener 
     p.setDither(true);
     p.setShader(gradient);
 
-    LinearGradient alphaGradient = new LinearGradient(width / 2, 0, width / 2, height,
+    LinearGradient alphaGradient = new LinearGradient(0, 0, 0,height-10,
       new int[]{
-        Color.parseColor("#20FFFFFF"), Color.parseColor("#C0FFFFFF")
+        Color.parseColor("#20FFFFFF"), Color.parseColor("#000000")
       },
       new float[]{
         0.0f, 1.0f
